@@ -306,7 +306,14 @@ export default function App() {
       <div className="auth-wrapper">
         <div className="auth-card">
           <div className="auth-header">
-            <div className="auth-logo-badge">⚡</div>
+            <div className="brand-logo-icon auth-logo-large">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="7" fill="#18181b" stroke="var(--border-color)" strokeWidth="1.2"/>
+                <path d="M7 10.5C7 9.67 7.67 9 8.5 9H17.5C18.33 9 19 9.67 19 10.5V19.5C19 20.33 18.33 21 17.5 21H8.5C7.67 21 7 20.33 7 19.5V10.5Z" fill="var(--bg-secondary)" stroke="var(--border-color)" strokeWidth="1.2"/>
+                <path d="M13 14.5C13 13.67 13.67 13 14.5 13H23.5C24.33 13 25 13.67 25 14.5V23.5C25 24.33 24.33 25 23.5 25H14.5C13.67 25 13 24.33 13 23.5V14.5Z" fill="var(--bg-card)" stroke="var(--text-muted)" strokeWidth="1.2"/>
+                <path d="M16 19.5L18.5 22L22.5 16.5" stroke="var(--text-main)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
             <h2>{isRegister ? 'Create an Account' : 'Welcome to TaskFlow'}</h2>
             <p>{isRegister ? 'Set up your workspace to manage tasks' : 'Enter your details to sign in'}</p>
           </div>
